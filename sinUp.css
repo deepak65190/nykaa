@@ -1,0 +1,55 @@
+body{
+    background-color: #F3F3F3;
+}
+#form{
+   
+    text-align: center;
+    margin: auto;
+    width: 22%;
+    height: 600px;
+    border: 1px solid #D6D6D6;
+    border-radius: 14px 14px 0px 0px;
+    background-color:white ;
+}
+hr{
+    width: 80%;
+    height: 1px;
+    background-color: #D6D6D6;
+    border: none;
+}
+#register{
+    margin-top: 30px;
+    font-size: bold;
+}
+#reward{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+span{
+    color: #FC76B5;
+}
+#Name1, #Number,#Email,#pass{
+    
+    margin-bottom: 20px;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+    padding: 10px 20px;
+}
+#sub{ letter-spacing: 3px ;
+    color: white;
+    border: none;
+    background-color: #FC2779;
+    padding: 10px 55px;
+}
+#form1{
+  
+    margin-top: 70px;
+}
+#sub:hover{
+    cursor: pointer;
+}
+

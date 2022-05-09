@@ -1,0 +1,138 @@
+*{
+    font-family: 'Inter', sans-serif,'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#foot-container{
+width: 100%;
+height: auto;
+
+
+
+
+
+
+
+}
+#foot-container>div{
+
+width: 100%;
+
+
+}
+#foot-container>div:nth-child(1){
+color: white;
+height: 100px;
+
+background-color: #3f414d;
+}
+#foot-container>div:nth-child(2){
+height: 350px;
+background-color: #8C8D94;
+}
+#foot-container>div:nth-child(3){
+height: 150px;
+}
+#foot-container>div:nth-child(4){
+height: 80px;
+background-color: #FC2779;
+}
+.foot1{
+
+display: flex;
+justify-content: space-evenly;
+
+
+}
+.foot1>div{
+
+margin-top: 20px;
+}
+
+.foot1>div>p{
+
+font-size: 14px;
+
+}
+.foot2{
+display: flex;
+justify-content: space-evenly;
+}
+.foot2>div{
+margin-top: 30px;
+font-size: 12px;
+}
+ul{
+margin-top: 10px;
+color: white
+
+}
+h3{
+color: white;
+}
+.foot3{
+margin: auto;
+display: flex;
+justify-content: space-evenly;
+}
+
+.foot3>div{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Orders{
+
+font-size: 13px;
+}
+.margin-top10px{
+margin-bottom: 7px;
+}
+.centre-icon>img{
+margin-left: 5%;
+
+}
+.centre-icon:hover{
+cursor: pointer;
+}
+.foot4{
+text-align: center;
+color: white;
+}
+.up{
+display: flex;
+margin-left: 30%;
+margin-right: 30%;
+justify-content: space-between;
+
+
+}
+.up>p{
+margin-top: 10px;
+}
+.up>p:hover{
+cursor: pointer;
+}
+ul:hover{
+cursor: pointer;
+color: #FF95BD;
+}
+.in{
+    
+    display: flex;
+   
+}
+button{
+    color: white;
+    background-color:#3f414d; ;
+}
+input{
+   
+    background-color:#3f414d ;
+}
+::placeholder{
+    color: white;
+}
+footer{
+    margin-bottom: 40px;
+}

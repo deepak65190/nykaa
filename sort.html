@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sort.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- <header></header> -->
+     <!-- <header></header> -->
+     <header>
+        <div id="nav-container">
+            <div class="nav1">
+                <div> <p style="font-size: 18px;text-align: center;margin-top: 10px;">Nykaa Summer Super Saver Days Are Live - Shop Now !</p></div>
+            <div class="nav1-box">
+                <div><p style="text-align: center;margin-top: 10px;"> <span><i class="fa-solid fa-mobile-notch"></i></span> Get App</p></div>
+                <div><p style="text-align: center;margin-top: 10px;">Store & Events</p></div>
+                <div><p style="text-align: center;margin-top: 10px;">Gift Card</p></div>
+                <div><p style="text-align: center;margin-top: 10px;">Help</p></div>
+            </div>
+            </div>
+            <div class="nav2">
+                <div class="box1">
+                    <ul id="nav-p">
+                        <li ><img style="height: 3rem;" src="./test.svg" alt=""></li>
+                        <li><a href="catagories.html"><p>Categories</p></a></li>
+                        <li><a href="catagories.html"><p>Brands</p></a></li>
+                        <li><a href="catagories.html"><p>Nykaa Fashion</p></a></li>
+                        <li><a href="catagories.html"><p>Beauty Advice</p</a></li>
+                        <li> <a href="catagories.html"><p>Nykaa Network
+                        </p></a></li>
+                    </ul>
+                </div>
+                <div><button id="search-button"> <i class="fa-solid fa-magnifying-glass"></i><input class="search" type="search" placeholder="Search on Nykaa"></button></div>
+                <div id="account"> 
+                <div><i 
+                     class="fa-solid fa-user"></i><a href="sinIn.html">Account</a></div>
+                <div><i style="color: #FD5C9A;" class="fa-solid fa-gift"></i></div>
+                <div><i class="fa-solid fa-bag-shopping"></i></div></div>
+            </div>
+        </div>
+    </header>
+    
+<div id="sale">
+    <div id="sale-1">
+        <div><p>Makeup</p></div>
+        <div><p>Skin</p></div>
+        <div><p>Hair</p></div>
+        <div><p>Appliances</p></div>
+        <div><p>Personal Care</p></div>
+        <div><p>Natural</p></div>
+        <div><p>Mom & Baby</p></div>
+        <div><p>Health & Wellness</p></div>
+        <div><p>Men</p></div>
+        <div><p>Fragrance</p></div>
+        <div><p>LUXE</p></div>
+        <div><p>OFFERS</p></div>
+    </div>
+</div>
+
+    <h4>Colorbar</h4>
+    <div id="colorbar"><img src="https://images-static.nykaa.com/uploads/54ee46fb-6538-4b9a-8ad4-90d5a04633a6.jpg?tr=w-1200,cm-pad_resize" alt=""></div>
+    <h2>All product</h2>
+    <select  id="sort-iteam" onchange="handleNameSort()">
+<option > sort by name</option>
+<option value="asc">ascending</option>
+<option value="dsc">decending</option>
+    </select>
+
+    
+    <div id="sort-con"></div>
+</body>
+</html>
+<script>
+    sortData = [
+        {feat:"FEATURED " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/c/2ce9017N_8904052428978_1.jpg" ,
+    pName:"Colorbar Perfect Match Primer" ,
+    mrp:"MRP :" ,
+    sPrice:" 850",
+    price:"₹ 638",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/2/c/2ce9017N_8904052428978_1.jpg" ,
+    pName:"Colorbar Perfect Match Primer" ,
+    mrp:"MRP :" ,
+    sPrice:" 850",
+    price:"₹ 638",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/6/066ccc2N_8904052432975_New_1.jpg" ,
+    pName:"Colorbar Waterproof Liquid Eyeliner" ,
+    mrp:"MRP :" ,
+    sPrice:" 425",
+    price:"₹ 319",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052460978m_1.png" ,
+    pName:"Colorbar Perfect Match Primer" ,
+    mrp:"MRP :" ,
+    sPrice:" 950",
+    price:"₹ 713",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052460978m_1.png" ,
+    pName:"Colorbar Spotlight Colorbar Spotlight Illuminating Lotion" ,
+    mrp:"MRP :" ,
+    sPrice:"950",
+    price:"₹ 713",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052435129_1.png" ,
+    pName:"Colorbar Intensely Rich Kajal" ,
+    mrp:"MRP :" ,
+    sPrice:" 170",
+    price:"₹ 128",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052400127_1_2.jpg" ,
+    pName:"Colorbar Just Smoky Eye Pencil" ,
+    mrp:"MRP :" ,
+    sPrice:" 695",
+    price:"₹ 521",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052404408_1.jpg" ,
+    pName:"Colorbar Kiss Proof Lip Stain" ,
+    mrp:"MRP :" ,
+    sPrice:" 950",
+    price:"₹ 713",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052400127_1_2.jpg" ,
+    pName:"Colorbar Just Smoky Eye Pencil" ,
+    mrp:"MRP :" ,
+    sPrice:" 695",
+    price:"₹ 521",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/f/5f28621n_8904052403197_new_1.jpg" ,
+    pName:"Colorbar Nail Polish Remover" ,
+    mrp:"MRP :" ,
+    sPrice:" 145 ",
+    price:"₹ 190 ",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052400172_1.png" ,
+    pName:"Colorbar Lash Illusion Mascara Lengthening Lash & Volumising..." ,
+    mrp:"MRP :" ,
+    sPrice:" 495 ",
+    price:"₹ 317 ",
+    off: " 25% Off" , 
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052426080.png" ,
+    pName:"Color Bar On The Go MakeUp Remover Wipes" ,
+    mrp:"MRP :" ,
+    sPrice:" 95",
+    price:"₹  71",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:" BESTSELLER " ,
+       
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/0/60091cc8904052426059_1.jpg" ,
+    pName:"Color Bar On The Go MakeUp Remover Wipes" ,
+    mrp:"MRP :" ,
+    sPrice:" 145 ",
+    price:"₹ 109 ",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/9/8/98e21ac8904052433385_1.jpg" ,
+    pName:"Colorbar  Sinbor" ,
+    mrp:"MRP :" ,
+    sPrice:"499 ",
+    price:"₹ 374",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/6/463f0e48904052447177_1.jpg" ,
+    pName:"Colorbar Flawless Finish Primer" ,
+    mrp:"MRP :" ,
+    sPrice:" 340 ",
+    price:"₹ 225 ",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/4/048f5cf8904052421160__1_.jpg" ,
+    pName:"Colorbar Velvet Matte Lipstick" ,
+    mrp:"MRP :" ,
+    sPrice:" 1200 ",
+    price:"₹ 900",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:" https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052432623_1.jpg" ,
+    pName:"Colorbar Sinful Matte Lipcolor" ,
+    mrp:"MRP :" ,
+    sPrice:" 850",
+    price:"₹ 638 ",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:" https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052403241-1_1.png" ,
+    pName:" Colorbar All-Matte Eyeliner" ,
+    mrp:"MRP :" ,
+    sPrice:"675 ",
+    price:"₹ 506 ",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/f/6f353538904052409694_1.jpg" ,
+    pName:"Colorbar All-Matte Eyeliner" ,
+    mrp:"MRP :" ,
+    sPrice:" 700 ",
+    price:"₹ 525",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+        {feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052432500-1.png" ,
+    pName:"Colorbar Ultimate Eye Liner" ,
+    mrp:"MRP :" ,
+    sPrice:" 650",
+    price:"₹ 488",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+{feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052433408-1_2.png" ,
+    pName:"Colorbar Kissproof Lipstick" ,
+    mrp:"MRP :" ,
+    sPrice:"1200 ",
+    price:"₹ 900 ",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+{feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052401919_1_1.png" ,
+    pName:"Colorbar Perfect Match Compact" ,
+    mrp:"MRP :" ,
+    sPrice:" 775 ",
+    price:"₹ 596 ",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+{feat:"FEATURED  " ,
+        sell: " BESTSELLER" ,
+    img_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/9/8904052400875.jpg" ,
+    pName:" Bolorbar Perfect Match BB Cream" ,
+    mrp:"MRP :" ,
+    sPrice:" 650 ",
+    price:"₹ 488 ",
+    off: " 25% Off" ,
+    gift:"Enjoy Free Gift" ,
+    bt:"ADD TO BAG" ,
+},
+
+
+    ] ;
+    var cardData= JSON.parse(localStorage.getItem("cart"))||[] ;
+
+    sortData.map(function(ele){
+        
+        var box = document.createElement("div") ;
+        var f= document.createElement("div") ;
+        f.innerText = ele.feat ;
+        f.setAttribute("class" ,"best") ;
+        var sell = document.createElement("div") ;
+        sell.innerText = ele.sell ;
+        sell.setAttribute("class" , "se") 
+        var top= document.createElement("div") ;
+        top.setAttribute("class" ,"top")
+        top.append(f,sell)
+
+        var image = document.createElement("img") ;
+        image.src = ele.img_url ;
+        image.setAttribute("class" ,"im") ;
+
+        var proName = document.createElement("div") ;
+        proName.innerText = ele.pName ;
+        proName.setAttribute("class" ,"name1") ; 
+
+       
+var mrs = document.createElement("div") ;
+mrs.innerText = ele.mrp ;
+        var sp = document.createElement("div") ;
+        sp.innerText = ele.sPrice ;
+        sp.setAttribute("class" ,"sp")
+
+        var p= document.createElement("div") ;
+        p.innerText = ele. price ;
+        p.setAttribute("class" ,"price") ;
+
+        var o = document.createElement("div") ;
+        o.innerText = ele.off ;
+        o.setAttribute("class" ,"off") ;
+
+        var mr= document.createElement("div") ;
+        mr.setAttribute("class","mrp")
+        mr.append( mrs,sp,p,o) ;
+
+        var g = document.createElement("div") ;
+        g.innerText= ele.gift ;
+        g.setAttribute("class" , "gift") ;
+
+        var btn = document.createElement("button") ;
+        btn.innerText =ele.bt ;
+        btn.setAttribute("class" ,"btn") 
+        btn.addEventListener("click" ,function(){
+            addToCard(ele)
+        })
+
+        box.append(top,image,proName , mr,g,btn) ;
+        document.querySelector("#sort-con").append(box)
+
+    })
+    function addToCard(ele){
+        console.log(ele)
+        cardData.push(ele) 
+        localStorage.setItem("cart" ,JSON.stringify(cardData))
+        alert("added to cart")
+    }
+    function handleNameSort(){
+        
+        var selected = document.querySelector("#sort-iteam").value ;
+        if(selected == "asc"){
+            sortData.sort(function(a,b){
+                var x = a.pName.toUpperCase() ;
+                var y = b.pName.toUpperCase() ;
+                if(x>y){
+                    return -1 ;
+                }
+                if(x<y){
+                    return 1 ;
+                }
+                return 0 ;
+            })
+           console.log(sortData)
+        }
+        if(selected == "dsc"){
+            sortData.sort(function(a,b){
+                var x = a.pName.toUpperCase() ;
+                var y = b.pName.toUpperCase() ;
+                if(x>y){
+                    return 1 ;
+                }
+                if(x<y){
+                    return -1 ;
+                }
+                return 0 ;
+            })
+            console.log(sortData)
+        }
+    }
+
+    
+</script>

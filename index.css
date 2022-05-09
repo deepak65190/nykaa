@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#top-image{
+    width: 100%;
+    height: auto;
+    margin: auto;
+   
+}
+body{
+    background-color: #F3F3F3;
+}
+#full{
+  width:  100% ;
+}
+#six-image{
+  
+    width: 72%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 15px;
+}
+#six-image>div{
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+    margin-bottom: 40px;
+}
+#six-image>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+}
+#super{
+    
+    margin: auto;
+    margin-bottom: 40px;
+    width: 72%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+}
+#super:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+}
+#shop-all-products{
+    font-size: 24px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+    text-align: left;
+    display: block;
+    color: white;
+    margin: auto;
+    margin-bottom:50px ;
+    padding: 18px 80px;
+    background-color:#FE006F ;
+    border: none;
+    border-radius: 5px;
+}
+#shop-all-products:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+}
+/* #arro{
+    float: right;
+} */
+#sale{
+    width: 100%;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    background-color: white;
+    margin-bottom: 5px;
+}
+#sale>div{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    
+}
+#sale-1{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+#sale-1>div{
+    text-align: center;
+    font-size: 14px;
+   
+    width: 13%;
+}
+#sale-1>div:hover{
+    cursor: pointer;
+    color: rgb(252,39,121);
+}
+
+
+
+
+

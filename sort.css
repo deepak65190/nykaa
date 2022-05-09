@@ -1,0 +1,100 @@
+*{
+    padding: 0px ;
+    margin: 0px;
+}
+body{
+    background-color: #F3F3F3;
+}
+ #sort-con{
+    margin-left: 20%;
+     font-size: 12px;
+    margin: auto;
+   width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(7,auto);
+    gap: 15px;
+   
+} 
+#sort-con>div{
+    border-radius: 3px;
+   
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.top{
+    margin-top: 10px;
+    display: flex;
+    
+}
+.se{
+    color: #5CD6B8;
+    margin-left: 5px;
+}
+.best{
+
+    margin-left: 15px;
+    color: #FC2779;
+}
+.name1{
+    margin-left: 20% ;
+    margin-right: 20%;
+   
+    color: #001325;
+    
+}  
+.gift{
+    margin-left: 35% ;
+    margin-right: 35%;
+color: #FC2779;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.im{
+    width: 100%;
+}
+.btn{
+    margin: auto;
+    display: block;
+    border: none;
+   background-color: white;
+    color: white;
+    padding: 5px 20px;
+}
+.btn:hover{
+    background-color: #FC2779;
+    cursor: pointer;
+}
+.mrp{
+    margin: auto;
+    display: flex;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+.off {
+    color: #008993;
+    margin-left: 5px;
+}
+.price{
+    margin-left: 5px;
+    color: black;
+    font-weight: bold;
+}
+.sp{
+    text-decoration: line-through;
+}
+#colorbar{
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+h4 , h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+   
+}
+#sort-iteam{
+    margin-left: 50px;
+}
+

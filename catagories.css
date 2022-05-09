@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#com{
+    width: 90%;
+    height: auto;
+   
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,auto);
+    gap: 20px;
+}
+#com>div:hover{
+cursor: pointer;
+}
+
+img{
+    width: 100%;
+}
+.parent{
+    position:relative;
+    
+}
+.child{
+    position: absolute ;
+    margin-top: -30px;
+font-size: 20px;
+color: #ED218F;
+margin-left: 10px;
+}
+.sixteen{
+font-size: 16px;
+margin-bottom: 5px;
+margin-left: 10px;
+
+}
+.fourteen{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #7B6D74;
+}
+
+

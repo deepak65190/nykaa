@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sinUp.css">
+    <title>sinUp</title>
+</head>
+<body>
+    <div id="form1">
+   <form id="form">
+        <p id="register">REGISTER</p> <hr>
+        <p id="reward">Register to <span>Earn2000  Reward Points!</span></p>
+        <div><input id="Name1" type="text" placeholder="Name"></div>
+        <div><input id="Number" type="number"placeholder = "Phone Number"></div>
+        <div><input id="Email" type="email" placeholder="Email Address"></div>
+        <div><input id="pass" type="password" placeholder="Create Password"></div>
+        <div><input id="sub" type="submit" value="REGISTER"></div>
+    </form>
+</div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myform)
+    var customerArr= JSON.parse(localStorage.getItem("sinIn"))|| [] ;
+     function myform(){
+         event.preventDefault() ;
+       
+         sinData=  {
+cusName:form.Name1.value ,
+cusNumber:form.Number.value ,
+cusEmail:form.Email.value ,
+cusPass:form.pass.value 
+
+         } ;
+        
+         customerArr.push(sinData)
+         localStorage.setItem("sinIn" ,JSON.stringify(customerArr))
+         window.location.href="index.html"
+     }
+     
+</script>
